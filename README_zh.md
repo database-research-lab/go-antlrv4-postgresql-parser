@@ -1,4 +1,4 @@
-# Antlr Postgresql Golang
+# Antlr v4 Postgresql Golang
 
 [English](./README.md)
 
