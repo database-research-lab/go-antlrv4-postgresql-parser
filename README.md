@@ -15,13 +15,13 @@ First run `main.go` in the project root directory, convert `PostgreSQLLexer.g4` 
 suitable for `Golang`, the converted directory is stored in other directories, and the default is stored in the project
 root directory Golang directory under .
 
-### Why do this layer of conversion?
+### Why do this step of conversion?
 
 The original g4 file is compatible with Java and C#, but some features of Java and C# cannot be adapted in Golang. For
 example, in the member method of a class in Java, this can be omitted to call the same class or parent class. method,
 but not in Golang, you must manually specify the receiver, and other problems such as package paths in golang are
 different from other languages, but you don't want to change the original g4 file, because once Changing g4 cannot
-guarantee the correctness of Java and C#. It is very stressful to ensure support for so many languages ​​in the same g4
+guarantee the correctness of Java and C#. It is very stressful to ensure support for so many languages ine the single g4
 file, so I chose to perform it based on the characteristics of golang based on the original file. Tweaked the generated
 new file so that it could adapt to Golang's syntax
 
