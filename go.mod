@@ -1,4 +1,4 @@
-module github.com/CC11001100/go-antlrv4-postgresql
+module github.com/database-research-lab/go-antlrv4-postgresql-parser
 
 go 1.17
 
